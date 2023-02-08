@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BACKGROUND PHOTO CHANGER</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+
+
+
+<div id="homee">
+
+<img class="myimg" src="img/manzara.jpg">
+
+<img class="myimg" src="img/manzara2.jpg">
+
+<img class="myimg" src="img/manzara3.jpg">
+    
+<img class="myimg" src="img/manzara4.jpg">
+    
+</div>
+
+
+</body>
+
+<script>
+
+const photos = document.querySelectorAll('.myimg');
+
+photos.forEach(photo => {
+
+  photo.onmouseover = function() {
+    document.body.style.backgroundImage = `url(${this.src})`;
+    document.body.style.backgroundSize = 'cover';
+    document.body.style.backgroundRepeat = 'no-repeat';
+    photo.style.border = "5px solid black"
+ 
+  };
+  
+
+  photo.onmouseleave = function() {
+   
+    photo.style.border = "5px solid white"
+ 
+  };
+
+});
+</script>
+</html>

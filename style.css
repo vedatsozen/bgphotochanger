@@ -1,0 +1,103 @@
+body {
+    text-align: center;
+    padding:0px;
+    margin:0px;
+
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#menu {
+    height:fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+ 
+}
+
+#menu > ul {
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    gap:10px;
+    width: fit-content;
+    
+}
+
+#menu > ul > li {
+    display: inline-block;
+    font-size: 20px;
+    letter-spacing: 3px;
+    display: block;
+    padding:5px 20px;
+    background-color: orangered;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+
+}
+
+#menu > ul > li:active {
+    transform: scale(0.9);
+}
+
+#menu > ul > li:hover {
+    background-color: black;
+    transition: 400ms;
+}
+
+#homee {
+  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 5px;
+    height:300px;
+    width:80%;
+    display:flex;
+    flex-direction:row !important;
+    justify-content:center;
+    align-items: center;
+    gap:20px;
+ 
+ 
+ 
+}
+
+
+#homee > img {
+    height:200px;
+    width:200px;
+    cursor: pointer;
+    border: 5px solid white;
+}
+
+
+h1 {
+    font-size: 40px;
+    margin: auto;
+    color: white;
+}
+
+p {
+    font-size:14px;
+    margin: auto;
+    margin-top: 20px;
+    color: black;
+    text-align: justify;
+    justify-self:normal;
+    width:80%;
+    cursor: pointer;
+}
+
+
+
